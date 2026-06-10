@@ -9,6 +9,8 @@
 9.md syntax
 10.readme.md purpose
 11.Tried Sample program using ollama
+```python
+
 from ollama import chat
 from pprint import pprint
 print(chat)
@@ -20,3 +22,4 @@ messages=[
 response=chat(model="llama3.1:latest",messages=messages)
 #print(response.message.content)
 pprint(response.model_dump())
+```
