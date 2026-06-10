@@ -1,14 +1,14 @@
-1.created git profile
-2.git commands git add .
-3.git commit -m "Day3 learnings"
-4.git push
-5.pip upgrade
-6.pip install ollama
-7.repo creation
-8.always work from root folder
-9.md syntax
-10.readme.md purpose
-11.Tried Sample program using ollama
+1. created git profile
+2. git commands git add .
+3. git commit -m "Day3 learnings"
+4. git push
+5. pip upgrade
+6. pip install ollama
+7. repo creation
+8. always work from root folder
+9. md syntax
+10. readme.md purpose
+11. Tried Sample program using ollama
 ```python
 
 from ollama import chat
