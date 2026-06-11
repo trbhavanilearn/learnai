@@ -1,4 +1,4 @@
-# 🚀 Day 3 - Ollama, JSON, XML, CSV & Prompt Engineering
+# 🚀 Day 4 - Ollama, JSON, XML, CSV & Prompt Engineering
 
 ## 🎯 Learning Objectives
 
