@@ -1,0 +1,20 @@
+
+<rolelist>
+<roles>
+    <role>Super Admin</role>
+    <description>Full Access</description>
+</roles>
+<roles>
+    <role>Admin</role>
+    <description>Read and Write Access</description>
+</roles>
+<roles>
+    <role>Viewer</role>
+    <description>View Access</description>
+</roles>
+<roles>
+    <role>Reader</role>
+    <description>Read Access</description>
+</roles>
+</rolelist>
+ 

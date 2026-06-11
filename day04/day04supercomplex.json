@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Bharathi",
+        "age": 20,
+        "skills": [
+            "HTML",
+            "JSON",
+            "C#"
+        ],
+        "primary_address": {
+            "number": "12",
+            "street": "Gandhi St",
+            "address": "",
+            "city": "",
+            "state": ""
+        },
+        "prev_addresses": [
+            {
+                "number": "12",
+                "street": "Gandhi St",
+                "address": "",
+                "city": "",
+                "state": ""
+            },
+            {
+                "number": "12",
+                "street": "Gandhi St",
+                "address": "",
+                "city": "",
+                "state": ""
+            }
+        ]
+    },
+    {
+        "name": "Bhavani",
+        "age": 20,
+        "skills": [
+            "HTML",
+            "JSON",
+            "C#"
+        ],
+        "primary_address": {
+            "number": "12",
+            "street": "Gandhi St",
+            "address": "",
+            "city": "",
+            "state": ""
+        },
+        "prev_addresses": [
+            {
+                "number": "12",
+                "street": "Gandhi St",
+                "address": "",
+                "city": "",
+                "state": ""
+            },
+            {
+                "number": "12",
+                "street": "Gandhi St",
+                "address": "",
+                "city": "",
+                "state": ""
+            }
+        ]
+    },
+    {
+        "name": "Aadhish",
+        "age": 20,
+        "skills": [
+            "HTML",
+            "JSON",
+            "C#"
+        ],
+        "primary_address": {
+            "number": "12",
+            "street": "Gandhi St",
+            "address": "",
+            "city": "",
+            "state": ""
+        },
+        "prev_addresses": [
+            {
+                "number": "12",
+                "street": "Gandhi St",
+                "address": "",
+                "city": "",
+                "state": ""
+            },
+            {
+                "number": "12",
+                "street": "Gandhi St",
+                "address": "",
+                "city": "",
+                "state": ""
+            }
+        ]
+    }
+]
