@@ -25,9 +25,16 @@
 
 | Purpose | Command |
 |----------|----------|
+| Create Virtual Environment | `python -m venv .venv` | 
+| Activate Virtual Environment | `source .venv/Scripts/activate` |
+| pip list  | `pip list` |
+| pip upgrade  | `python.exe -m pip install --upgrade pip` |
+| pip freeze  | `pip freeze` |
+| pip freeze to requirements.txt  | `pip freeze > requirements.txt` |
 | Stage All Files | `git add .` |
 | Commit Changes | `git commit -m "Day3 learnings"` |
 | Push Changes | `git push` |
+| Clone Changes | `git clone git@github.com:trbhavanilearn/learnai.git` |
 | Generate SSH Key | `ssh-keygen -t ed25519 -C "trbhavanilearn@gmail.com"` |
 | Set Git Username | `git config --global user.name "Bhavani"` |
 | Set Git Email | `git config --global user.email "trbhavanilearn@gmail.com"` |

@@ -1,0 +1,30 @@
+    1  ls
+    2  clear
+    3  sed
+    4  clear
+    5  ls
+    6  clear
+    7  clear
+    8  exite
+    9  exit
+   10  pwd
+   11  mkdir day01
+   12  mkdir day02
+   13  mkdir day03
+   14  cd day01
+   15  cat readme.md
+   16  cd ..
+   17  pwd
+   18  touch day01/README.md
+   19  touch day02/README.md
+   20  touch day03/README.md
+   21  touch day04/README.md
+   22  clear
+   23  git add .
+   24  git commit -m "Day03 learnings"
+   25  git push
+   26  pwd
+   27  cd day03
+   28  touch app.py
+   29  history
+   30  history >day3commands.txt
