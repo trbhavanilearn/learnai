@@ -1,0 +1,132 @@
+import chromadb
+from pprint import pprint
+print(chromadb)
+client=chromadb.PersistentClient("./chroma_db")
+collection=client.get_or_create_collection("documents_notes_100recs")
+print(collection)
+"""collection.add(documents=[
+        "Sachin Tendulkar is one of the greatest cricketers.",
+        "Virat Kohli is a modern cricket legend.",
+        "Python is a programming language."
+    ],
+    ids=["1","2","3"])"""
+documents = [
+    "Sachin Tendulkar is one of the greatest cricketers.",
+    "Virat Kohli is a modern cricket legend.",
+    "Python is a programming language.",
+    "MS Dhoni is known for his calm leadership.",
+    "Rohit Sharma has scored multiple double centuries in ODI cricket.",
+    "Jasprit Bumrah is one of the best fast bowlers in the world.",
+    "Hardik Pandya is a versatile all-rounder.",
+    "Ravindra Jadeja is famous for his fielding skills.",
+    "Shubman Gill is a promising young cricketer.",
+    "KL Rahul is known for his elegant batting style.",
+    "Cristiano Ronaldo is one of the greatest football players.",
+    "Lionel Messi won the FIFA World Cup with Argentina.",
+    "Neymar is known for his dribbling abilities.",
+    "Kylian Mbappe is one of the fastest footballers.",
+    "Erling Haaland is a prolific goal scorer.",
+    "Kevin De Bruyne is an excellent midfielder.",
+    "Mohamed Salah plays for Liverpool.",
+    "Harry Kane is a top English striker.",
+    "Luka Modric won the Ballon d'Or in 2018.",
+    "Robert Lewandowski is a world-class striker.",
+    "Python supports object-oriented programming.",
+    "Java is widely used in enterprise applications.",
+    "C++ is popular for system programming.",
+    "JavaScript powers interactive websites.",
+    "HTML is used to structure web pages.",
+    "CSS is used to style websites.",
+    "React is a popular frontend framework.",
+    "Streamlit helps build data applications quickly.",
+    "Flask is a lightweight Python web framework.",
+    "Django is a full-stack Python framework.",
+    "Machine Learning helps computers learn from data.",
+    "Deep Learning uses neural networks.",
+    "Artificial Intelligence is transforming industries.",
+    "Generative AI can create text and images.",
+    "Natural Language Processing enables language understanding.",
+    "Computer Vision helps machines understand images.",
+    "Large Language Models are trained on vast datasets.",
+    "OpenAI develops advanced AI models.",
+    "LangChain helps build LLM applications.",
+    "LangGraph enables agent workflows.",
+    "Pandas is used for data analysis.",
+    "NumPy provides efficient numerical computations.",
+    "Matplotlib creates visualizations in Python.",
+    "Seaborn simplifies statistical plotting.",
+    "Scikit-learn is used for machine learning.",
+    "TensorFlow is a deep learning framework.",
+    "PyTorch is popular for AI research.",
+    "Data visualization helps understand patterns.",
+    "CSV files store tabular data.",
+    "Excel is widely used for spreadsheets.",
+    "Albert Einstein developed the theory of relativity.",
+    "Isaac Newton formulated the laws of motion.",
+    "Nikola Tesla contributed to electrical engineering.",
+    "Thomas Edison invented many useful devices.",
+    "Marie Curie won two Nobel Prizes.",
+    "Stephen Hawking studied black holes.",
+    "Galileo improved the telescope.",
+    "Charles Darwin proposed evolution by natural selection.",
+    "Leonardo da Vinci was a scientist and artist.",
+    "Aristotle influenced Western philosophy.",
+    "The Sun is the center of the solar system.",
+    "Earth revolves around the Sun.",
+    "Mars is known as the Red Planet.",
+    "Jupiter is the largest planet.",
+    "Saturn is famous for its rings.",
+    "The Moon orbits Earth.",
+    "Water covers most of Earth's surface.",
+    "Photosynthesis occurs in plants.",
+    "Oxygen is essential for human life.",
+    "Gravity keeps planets in orbit.",
+    "The Taj Mahal is located in India.",
+    "The Eiffel Tower is in Paris.",
+    "The Great Wall is in China.",
+    "Mount Everest is the tallest mountain.",
+    "The Amazon Rainforest is the largest rainforest.",
+    "The Nile is one of the longest rivers.",
+    "Tokyo is the capital of Japan.",
+    "New Delhi is the capital of India.",
+    "London is the capital of the United Kingdom.",
+    "Canberra is the capital of Australia.",
+    "ChatGPT is an AI assistant.",
+    "Retrieval Augmented Generation combines search and generation.",
+    "Vector databases store embeddings.",
+    "ChromaDB is a popular vector database.",
+    "Embeddings convert text into numerical vectors.",
+    "Semantic search finds similar meanings.",
+    "Prompt engineering improves AI outputs.",
+    "Fine-tuning customizes language models.",
+    "Agents can use tools to solve tasks.",
+    "RAG systems improve answer accuracy.",
+    "Transformers power modern language models.",
+    "A football team consists of eleven players.",
+    "The FIFA World Cup is held every four years.",
+    "The Indian Premier League is a popular cricket tournament.",
+    "Barcelona is a famous football club.",
+    "Real Madrid has won many Champions League titles.",
+    "Manchester United is one of England's biggest clubs.",
+    "Chelsea plays in the English Premier League.",
+    "Arsenal has a rich football history.",
+    "Bayern Munich dominates German football.",
+    "Paris Saint-Germain plays in France.",
+    "Football is the world's most popular sport."
+]
+
+ids = [str(i) for i in range(1, len(documents) + 1)]
+
+collection.add(
+    documents=documents,
+    ids=ids
+)
+data=collection.get(include=["documents","embeddings"])
+#for i in range(len(data["ids"])):
+#    print("\nID:", data["ids"][i])
+#    print("Embedding Size:", len(data["embeddings"][i]))
+#    print("Embedding : ", data["embeddings"][i])
+#print(collection.count())
+#result=collection.query(query_texts="Sachin")
+result=collection.query(query_texts="top football players",n_results=5)
+pprint(result)
