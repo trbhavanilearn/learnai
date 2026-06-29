@@ -1,0 +1,19 @@
+[project]
+name = "myapp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bhavani", email = "trbhavanilearn@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pandas>=3.0.4",
+]
+
+[project.scripts]
+myapp = "myapp:main"
+
+[build-system]
+requires = ["uv_build>=0.11.25,<0.12.0"]
+build-backend = "uv_build"
